@@ -1,0 +1,34 @@
+.form {
+
+    &__input {
+        // box model
+        padding-bottom: 15px;
+        border-bottom: 2px solid #5bdcff;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        width: 375px;
+        background-color: #00bff3;
+        outline: none;
+        color: $white;
+        display: inline-block;
+        margin-right: 20px;
+
+        &--short {
+            width: 170px;
+        }
+    }
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #52d8fd;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #52d8fd;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color:#52d8fd;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #52d8fd;
+}

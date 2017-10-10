@@ -1,0 +1,38 @@
+.features {
+    // positioning
+    position: relative;
+    padding: 100px 0;
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__container {
+        // positioning
+        position: relative;
+        // box model
+        display: inline-block;
+        padding: 20px 0;
+        width: 33%;
+    }
+    &__text-container {
+        // box model
+        padding-left: 100px;
+    }
+
+    &__title {
+        // box model
+
+        //typography
+        font-size: 1.875rem;
+    }
+
+    &__text {
+        // typography
+        font-size: 1rem;
+        font-family: $RobotoRegular;
+        color: #9699a6;
+    }
+}

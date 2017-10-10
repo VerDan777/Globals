@@ -44,31 +44,50 @@ body
             .add 
                 .add__plus +
 
-    section.hero: .wrapper
+    section.hero
+        .wrapper
             .hero__container
                 h1.hero__title  Hello World!
                 h2.hero__subtitle Welcome to Space Hosting
                 p.hero__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nitbh euismod tincidunt ut laoreet.
     
-    section.check: .wrapper
-        .check__img: img(src="./img/businessman.png", alt="")
-        .check__container
-            h2.check__title Check Your Domain Name
-            p.check__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam. 
-            input.form__input(type="text" placeholder="www")
-            input.form__input.form__input--short(type="text" placeholder="com")
-            a.button.button--form(href="#")
-            a(href="#") See All Domain Pricing ->
+    section.check
+        .wrapper
+            .check__img: img(src="./img/businessman.png", alt="")
+            .check__container
+                h2.check__title Check Your Domain Name
+                p.check__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam. 
+                input.form__input(type="text" placeholder="www")
+                input.form__input.form__input--short(type="text" placeholder="com")
+                a.button.button--form(href="#") Check Avaxilability
+                a.link(href="#") See All Domaiqn Pricing ->
     
     section.features
         .wrapper
             mixin feature(IconUrl,title,text)
                 .features__container
-                    .features__icon: img(src=IconUrl, alt="")
-                    .features__title= title
-                    .features__text= text
-                    a.button.button--feature(href="#") Read More >>
-            +feature("./img/rocket-fearure.png","Fast Web Hosting", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
-
-
-
+                    .features__icon: img(src=IconUrl)
+                    .features__text-container
+                        .features__title= title
+                        .features__text= text
+                        a.button.button--feature(href="#") Read More >>
+            +feature("./img/icon-rocket.png","Fast Web Hosting", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
+            +feature("./img/icon-chip.png","Quality Equipment","Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
+            +feature("./img/icon-chart.png", "Data Analysis", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
+            +feature("./img/icon-service.png", "Technical Service", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
+            +feature("./img/icon-calendar.png", "Daily Backups", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
+            +feature("./img/icon-help.png", "24/7 Support", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
+            
+    section.hosting
+        .hosting__container.hosting__container--shared
+            .hosting__inner-container
+                h3.hosting__title <strong>Shared</strong> Hosting
+                p.hosting__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+        .hosting__container.hosting__container--vps
+            .hosting__inner-container
+                h3.hosting__title <strong>VPS</strong> Hosting
+                p.hosting__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
+        .hosting__container.hosting__container--dedicated
+            .hosting__inner-container
+                h3.hosting__title <strong>Dedicated</strong> Server
+                p.hosting__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.

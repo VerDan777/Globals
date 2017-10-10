@@ -1,0 +1,36 @@
+.hosting {
+    height: 300px;
+    // margin: -0.625rem;
+    padding: 0;
+
+    &__container {
+        // box model
+        width: 33.12%;
+        display: inline-block;
+        
+
+        &--shared {
+            background-color: $Button;
+        }
+        &--vps {
+            background-color: $orange;
+        }
+        &--dedicated {
+            background-color: $yellow;
+        }
+    }
+
+    &__title {
+        font-size: 2.625rem;
+        font-family: $RobotoThin;
+        font-weight: 100;
+    }
+    &__text {
+        padding: 10px 0;
+        color: $white;
+        line-height: 1.3rem;
+    }
+    &__inner-container {
+        padding: 100px 20px;
+    }
+}

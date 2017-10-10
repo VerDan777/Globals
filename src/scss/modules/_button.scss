@@ -1,0 +1,29 @@
+.button {
+    // box model
+    display: block;
+    width: 200px;
+    margin: 50px 0;
+    padding: 10px 25px;
+    text-align: center;
+
+    //typography
+    font-family: 1rem;
+    font-family: $RobotoRegular;
+
+    // visual
+    background-color: #f2f3f5;
+    border-radius: 50px;
+    color: $white;
+
+    &:hover {
+        background-color: $Button;
+        transition: 0.3s ease-in-out; 
+    }
+
+    &--form {
+
+        // visual
+        background-color: $Header;
+        
+    }
+}
