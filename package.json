@@ -1,0 +1,32 @@
+{
+  "name": "global",
+  "version": "1.0.0",
+  "description": "global bootstrap site",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VerDan777/Globals.git"
+  },
+  "author": "Daniil Vereschagin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VerDan777/Globals/issues"
+  },
+  "homepage": "https://github.com/VerDan777/Globals#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-pug2": "0.0.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-watch": "^4.3.11",
+    "sass-module-importer": "^1.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}
