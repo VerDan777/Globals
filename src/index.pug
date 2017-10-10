@@ -4,8 +4,71 @@ head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    link(rel="stylesheet", href="./node_modules/bootstrap/dist/css/bootstrap.min.css")
+    link(rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="img/Rocket.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="img/Rocketpng")
+    link(rel="manifest" href="/manifest.json")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5")
+    meta(name="theme-color" content="#ffffff")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Fira+Sans:400,800i" rel="stylesheet")
     link(rel="stylesheet", href="styles.css")
-    title Document
-body Привет!!!
+    title Globals
+body 
+    header.page-header
+        .wrapper
+            .main-nav
+                .main-nav__icon
+                    .main-nav__icon__middle
+            .logo 
+                .logo__img
+                    img(src="img/rocket.png" alt="Rocket")
+                p.logo__text Globals
+
+            nav.main-menu
+                ul.main-menu__list
+                    li.main-menu__item
+                        a.main-menu__link(href="#") Home
+                    li.main-menu__item
+                        a.main-menu__link(href="#") Pages
+                    li.main-menu__item
+                        a.main-menu__link(href="#") Hosting
+                    li.main-menu__item
+                        a.main-menu__link(href="#") Domains
+                    li.main-menu__item
+                        a.main-menu__link(href="#") Blog
+                    li.main-menu__item
+                        a.main-menu__link(href="#") Contacts
+                .dots
+                img(src="img/dots.png", alt="")
+            .add 
+                .add__plus +
+
+    section.hero: .wrapper
+            .hero__container
+                h1.hero__title  Hello World!
+                h2.hero__subtitle Welcome to Space Hosting
+                p.hero__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nitbh euismod tincidunt ut laoreet.
+    
+    section.check: .wrapper
+        .check__img: img(src="./img/businessman.png", alt="")
+        .check__container
+            h2.check__title Check Your Domain Name
+            p.check__text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam. 
+            input.form__input(type="text" placeholder="www")
+            input.form__input.form__input--short(type="text" placeholder="com")
+            a.button.button--form(href="#")
+            a(href="#") See All Domain Pricing ->
+    
+    section.features
+        .wrapper
+            mixin feature(IconUrl,title,text)
+                .features__container
+                    .features__icon: img(src=IconUrl, alt="")
+                    .features__title= title
+                    .features__text= text
+                    a.button.button--feature(href="#") Read More >>
+            +feature("./img/rocket-fearure.png","Fast Web Hosting", "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.")
+
+
 

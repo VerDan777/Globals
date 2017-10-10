@@ -1,0 +1,40 @@
+.hero {
+    // position: relative;
+    // box model
+    height: 90vh;
+    max-height: 945px;
+    background-color: #25292c;
+
+    &__container {
+        position: absolute;
+        top: 300px;
+        left: 0;
+        width: 600px;
+    }
+x
+    &__title {
+
+        //typography
+        font-family: $RobotoLight;
+        font-size: 5.35rem;
+    }
+
+    &__subtitle {
+        // box model
+        padding: 15px 0;
+        // typography
+        font-family: $RobotoThin;
+        font-size: 2.875rem;
+    }
+    &__text {
+        color:#ffffff;
+        font-size: 1.125rem;
+    }
+    &__img {
+
+        img {
+        height: 50%;
+        width: 50%;
+        }
+    }
+}

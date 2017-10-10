@@ -1,0 +1,58 @@
+.main-nav {
+    position: relative;
+    vertical-align: middle;
+    // box model
+    display: inline-block;
+
+    &__icon {
+        // box model
+        height: 30px;
+        width: 30px;
+
+        &__middle {
+
+            position: absolute;
+            top: 0;
+            left: 8;
+
+            // box model
+            height: 2px;
+            width: 30px;
+
+            // visual
+            background-color: $white; 
+        }
+
+        &::before {
+            content: '';
+            
+            // positioning
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            // box model
+            height: 2px;
+            width: 30px;
+
+            // visual
+            background-color: $white;
+        }
+        
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 16px;
+            left: 0;
+
+            // box model
+            height: 2px;
+            width: 30px;
+
+            // visual
+            background-color: $white;
+        }
+    }
+}

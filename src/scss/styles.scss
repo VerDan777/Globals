@@ -1,3 +1,20 @@
-body {
-    background-color: red;
-}
+// normalize.css
+
+@import "normalize.css";
+
+//base
+@import "base/_vars.scss";
+@import "base/_mixins.scss";
+@import "base/_globals.scss";
+
+// modules
+
+@import "modules/_page-header";
+@import "modules/_main-nav";
+@import "modules/_main-menu";
+@import "modules/_wrapper";
+@import "modules/_logo";
+@import "modules/add";
+@import "modules/dots";
+@import "modules/hero";
+@import "modules/check";

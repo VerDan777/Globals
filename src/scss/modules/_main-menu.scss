@@ -1,0 +1,30 @@
+.main-menu {
+    // box model
+    display: inline-block;
+    vertical-align: middle;
+
+    &__list {
+        // box model
+        display: inline;
+        list-style: none;
+    }
+    &__item {
+        // box model
+        display: inline-block;
+        padding: 0 30px;
+
+   
+    }
+    &__link {
+
+        // color
+        color: #63666e;
+
+        &:hover {
+            // visual
+            color: #00bff3;
+            transition: 0.2s all ease-in-out;
+            text-decoration: none;
+        }
+    }
+}

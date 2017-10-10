@@ -27,6 +27,7 @@
     "sass-module-importer": "^1.4.0"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4.0.0-alpha.6",
+    "normalize.css": "^7.0.0"
   }
 }

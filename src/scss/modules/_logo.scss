@@ -1,0 +1,26 @@
+.logo {
+    // positioning
+    position: relative;
+
+    // box model
+    display: inline-block;
+    padding: 0 100px;
+
+    &__img {
+        position: absolute;
+        left: 10%;
+    }
+
+    &__text {
+        // box model
+        display: inline-block;
+
+        //typography
+        font-family: "Fire Sans ExtraBoldItalic",sans-serif;
+        font-size: 2.25rem;
+        
+
+        // visual
+        color: $white;
+    }
+}

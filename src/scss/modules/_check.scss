@@ -1,0 +1,19 @@
+.check {
+    background-color: #00bff3;
+    height: 100vh;
+    max-height: 600px;
+    position: relative;
+
+    &__img {
+        position: absolute;
+        top: 50px;
+        left: -100px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__container {
+        
+    }
+}
